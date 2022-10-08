@@ -66,8 +66,11 @@ public class Student {
     }
 
     public String getStudentInfo() {
-        String info = "Student Full Name: " + firstName + " " + lastName;
-        info += "Graduation Year: " + gradYear;
+        String info = "Student Full Name: " + firstName + " " + lastName + "\n";
+        info += "Graduation Year: " + gradYear + "\n";
+        info += "Number of test: " + testScoreCount + "\n";
+        info += "Average Test Score: " + averageTestScore() + "\n";
+        info += "Is passing: " + isPassing();
         return info;
     }
 
